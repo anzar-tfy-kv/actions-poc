@@ -1,0 +1,7 @@
+name: 'Hello World'
+description: 'A dummy Hello World GitHub Action'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo 'Hello, World!'
+      shell: bash
