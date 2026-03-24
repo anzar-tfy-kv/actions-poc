@@ -20,8 +20,9 @@ jobs:
     steps:
       - name: Payload type and client payload
         env:
-          PAYLOAD_TYPE: ${{ github.event.client_payload.type }}
+          # Matches the API event_type the app sends (e.g. create_team for team approval)
+          DISPATCH_ACTION: ${{ github.event.action }}
           CLIENT_PAYLOAD_JSON: ${{ toJSON(github.event.client_payload) }}
         run: |
-          echo "type=${PAYLOAD_TYPE}"
+          echo "action=${DISPATCH_ACTION}"
           echo "client_payload=${CLIENT_PAYLOAD_JSON}"
