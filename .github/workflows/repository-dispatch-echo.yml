@@ -1,0 +1,27 @@
+name: Repository dispatch echo
+
+on:
+  repository_dispatch:
+    types:
+      - create_team
+      - edit_team
+      - delete_team
+      - create_virtual_account
+      - edit_virtual_account
+      - delete_virtual_account
+
+permissions:
+  contents: read
+
+jobs:
+  echo:
+    name: Echo payload
+    runs-on: ubuntu-latest
+    steps:
+      - name: Payload type and client payload
+        env:
+          PAYLOAD_TYPE: ${{ github.event.client_payload.type }}
+          CLIENT_PAYLOAD_JSON: ${{ toJSON(github.event.client_payload) }}
+        run: |
+          echo "type=${PAYLOAD_TYPE}"
+          echo "client_payload=${CLIENT_PAYLOAD_JSON}"
