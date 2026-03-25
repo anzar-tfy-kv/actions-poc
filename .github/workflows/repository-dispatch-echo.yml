@@ -4,10 +4,9 @@ on:
   repository_dispatch:
     types:
       - create_team
-      - edit_team
-      - delete_team
+      - update_team
       - create_virtual_account
-      - edit_virtual_account
+      - update_virtual_account
       - delete_virtual_account
 
 permissions:
