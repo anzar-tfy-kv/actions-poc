@@ -1,0 +1,14 @@
+type: app
+name: virtualaccount2
+permissions:
+- role_id: cmibg942p3bzi01sieg8n5wfm
+  resource_type: account
+- role_id: cmibg942p3bzi01sieg8n5wfn
+  resource_type: account
+- role_id: provider-integration-access
+  resource_type: provider-integration
+  resource_fqn: truefoundry:openai:global:model:gpt-4o-mini
+tags:
+  env: dev
+ownedBy:
+  team: anzar-test
