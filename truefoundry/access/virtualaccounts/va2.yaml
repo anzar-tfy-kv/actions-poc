@@ -1,0 +1,10 @@
+id: va2
+managers:
+- anzar@truefoundry.com
+type: app
+name: virtual account 2
+env: dev
+models: aaa
+explanation_of_usage: Test
+expected_volumes: '100'
+status: active
