@@ -1,0 +1,10 @@
+id: 1
+owner: vaupdater@example.com
+type: app
+name: NewName
+env: dev
+models:
+- m
+explanation_of_usage: u
+expected_volumes: null
+status: pending
