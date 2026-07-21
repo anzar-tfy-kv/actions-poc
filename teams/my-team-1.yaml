@@ -1,0 +1,12 @@
+id: 1
+name: My Team
+owner: pruser@example.com
+members:
+- dev@ex.com
+type: team
+managers:
+- mgr@ex.com
+model_providers:
+- OpenAI
+business_requirement: Testing
+status: pending
