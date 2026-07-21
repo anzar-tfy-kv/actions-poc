@@ -1,0 +1,12 @@
+id: 1
+name: Acme Team
+owner: failpr@example.com
+members:
+- dev@acme.com
+type: team
+managers:
+- mgr@acme.com
+model_providers:
+- Anthropic
+business_requirement: Testing failure
+status: pending
