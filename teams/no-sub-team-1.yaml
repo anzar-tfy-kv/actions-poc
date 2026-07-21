@@ -1,0 +1,12 @@
+id: 1
+name: No Sub Team
+owner: nosub@example.com
+members:
+- dev@ex.com
+type: team
+managers:
+- mgr@ex.com
+model_providers:
+- Google
+business_requirement: No sub test
+status: pending
