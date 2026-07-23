@@ -1,0 +1,12 @@
+id: 1
+name: Europe-TrueFoundry
+owner: anzar@truefoundry.com
+members:
+- anzar@truefoundry.com
+type: team
+managers:
+- anzar@truefoundry.com
+model_providers:
+- anthropic-model
+business_requirement: ''
+status: pending
