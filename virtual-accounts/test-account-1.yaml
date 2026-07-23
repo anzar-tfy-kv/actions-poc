@@ -1,0 +1,10 @@
+id: 1
+owner: anzar@truefoundry.com
+type: automation
+name: Test account
+env: qua
+models:
+- claude-opus-4-1
+explanation_of_usage: Test Usage
+expected_volumes: 100 requests/day
+status: pending
